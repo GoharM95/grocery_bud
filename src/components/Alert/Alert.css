@@ -5,3 +5,11 @@
 .alert-danger {
   background-color: red;
 }
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-weight: 700;
+}

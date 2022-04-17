@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./List.css";
 
 const List = ({ items, removeItem, editItem }) => {
   return (
@@ -6,7 +7,7 @@ const List = ({ items, removeItem, editItem }) => {
       {items.map((item) => {
         const { id, title } = item;
         return (
-          <div key={id}>
+          <div key={id} className="container">
             <p>{title}</p>
             <div>
               <button onClick={() => editItem(id)}>edit</button>

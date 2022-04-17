@@ -91,7 +91,9 @@ const App = () => {
       {list.length > 0 && (
         <div>
           <List items={list} removeItem={removeItem} editItem={editItem} />
-          <button onClick={clearList}>clear list</button>
+          <div className="clear-btn">
+            <button onClick={clearList}>clear list</button>
+          </div>
         </div>
       )}
     </div>
